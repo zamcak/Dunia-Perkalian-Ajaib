@@ -1,0 +1,252 @@
+/* HomeScreen.css - Style khusus untuk HomeScreen */
+
+.home-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Background */
+.home-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
+/* Header Section */
+.home-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 20px 10px;
+}
+
+.character-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.home-character {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  animation: bounce 2s infinite;
+}
+
+.welcome-text {
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.welcome-sub {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Score Panel */
+.score-panel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 6px 18px;
+  border-radius: 40px;
+  margin-top: 15px;
+}
+
+.icon-star {
+  width: 20px;
+  height: 20px;
+}
+
+.score-text {
+  color: #FFD700;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Menu Grid - 2 kolom */
+.menu-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Button style */
+.menu-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn:active {
+  transform: scale(0.96);
+}
+
+/* Gambar button */
+.btn-custom-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Teks di TENGAH - PAKSA PAKAI FLEX */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.home-footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.home-footer p {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Animasi */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Hover effect untuk desktop */
+@media (hover: hover) {
+  .menu-btn:hover {
+    transform: scale(1.02);
+  }
+  
+  .menu-btn:hover .btn-title {
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 480px) {
+  .menu-grid {
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  
+  .btn-title {
+    font-size: 22px;
+  }
+  
+  .welcome-text {
+    font-size: 26px;
+  }
+  
+  .home-character {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Untuk layar sangat kecil */
+@media (max-width: 380px) {
+  .menu-grid {
+    gap: 12px;
+    padding: 12px 15px;
+  }
+  
+  .btn-title {
+    font-size: 18px;
+  }
+}
+
+/* Landscape mode */
+@media (max-width: 800px) and (orientation: landscape) {
+  .home-header {
+    padding: 10px 20px;
+  }
+  
+  .home-character {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .welcome-text {
+    font-size: 22px;
+  }
+  
+  .menu-grid {
+    gap: 12px;
+    padding: 10px 20px;
+  }
+  
+  .btn-title {
+    font-size: 18px;
+  }
+  
+  .home-footer {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+}

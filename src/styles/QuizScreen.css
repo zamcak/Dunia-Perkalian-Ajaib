@@ -1,0 +1,1180 @@
+/* ========================================
+   QUIZ SCREEN CSS - FULL VERSION
+   ======================================== */
+
+/* ----------------------------------------
+   Pilih Karakter
+   ---------------------------------------- */
+.character-select-container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.select-title {
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+.select-subtitle {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 30px;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.character-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 30px;
+  padding: 25px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-img-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.character-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.character-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.select-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+/* ----------------------------------------
+   Pilih Level
+   ---------------------------------------- */
+.level-select-container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.selected-character-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0 auto 20px;
+  color: white;
+}
+
+.selected-char-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.levels-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.level-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  border: 2px solid;
+  transition: transform 0.3s;
+}
+
+.level-card:hover {
+  transform: translateX(10px);
+}
+
+.level-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+.level-info-text {
+  flex: 1;
+  text-align: left;
+}
+
+.level-info-text h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.level-info-text p {
+  font-size: 12px;
+  color: #666;
+}
+
+.level-arrow {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.drag-badge {
+  display: inline-block;
+  background: #9C27B0;
+  color: white;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* ----------------------------------------
+   Game Play - Header & Status
+   ---------------------------------------- */
+.level-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+}
+
+.character-status {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+.status-char-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: rgba(255,255,255,0.9);
+  padding: 5px;
+}
+
+.progress-info-quiz {
+  flex: 1;
+}
+
+.progress-bar-quiz {
+  height: 8px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-fill-quiz {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+/* ----------------------------------------
+   Question Card (Multiple Choice)
+   ---------------------------------------- */
+.question-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 30px;
+  margin: 20px;
+  padding: 25px;
+}
+
+.question-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.question-text {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.soal-gambar {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option-btn:hover:not(:disabled) {
+  transform: translateX(5px);
+  background: #e9ecef;
+}
+
+.option-letter {
+  width: 40px;
+  height: 40px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.option-text {
+  flex: 1;
+  font-size: 18px;
+}
+
+.option-btn.correct {
+  background: #d4edda;
+  border-color: #28a745;
+}
+
+/* ----------------------------------------
+   Feedback Popup
+   ---------------------------------------- */
+.feedback-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.9);
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 100;
+  animation: zoomIn 0.3s;
+}
+
+.feedback-popup img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.feedback-popup p {
+  color: white;
+  font-size: 18px;
+}
+
+/* ----------------------------------------
+   Petunjuk Box
+   ---------------------------------------- */
+.petunjuk-box {
+  background: #e3f2fd;
+  border-radius: 30px;
+  padding: 8px 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.petunjuk-icon {
+  font-size: 16px;
+}
+
+/* ----------------------------------------
+   Drag & Drop Custom Styles
+   ---------------------------------------- */
+.drag-drop-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 30px;
+  margin: 20px;
+  padding: 25px;
+  min-height: 500px;
+}
+
+.drag-instruction-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 12px 20px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.drag-hand-icon {
+  font-size: 24px;
+}
+
+.drag-instruction-banner p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Drop Zone */
+.drag-drop-zone-custom {
+  background: rgba(156, 39, 176, 0.1);
+  border: 3px dashed #9C27B0;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.drag-drop-zone-custom.drag-over-active {
+  background: rgba(76, 175, 80, 0.2);
+  border-color: #4CAF50;
+  transform: scale(1.02);
+}
+
+.drop-zone-content {
+  text-align: center;
+}
+
+.drop-zone-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.drop-zone-text {
+  font-size: 16px;
+  color: #9C27B0;
+  font-weight: bold;
+}
+
+.drop-zone-hover {
+  margin-top: 10px;
+  color: #4CAF50;
+  font-weight: bold;
+  animation: pulse 0.5s infinite;
+}
+
+/* Drag Question Card */
+.drag-question-card {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.drag-question-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.drag-question-icon {
+  font-size: 30px;
+}
+
+.drag-question-text h3 {
+  font-size: 28px;
+  color: #333;
+}
+
+.drag-soal-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+/* Drag Numbers Container */
+.drag-numbers-container {
+  background: rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.drag-numbers-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+}
+
+.drag-numbers-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.drag-number-item {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  cursor: grab;
+  transition: all 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  user-select: none;
+}
+
+.drag-number-item:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+
+.drag-number-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Drag Feedback (Setelah Jawab) */
+.drag-feedback {
+  animation: fadeIn 0.3s ease;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.drag-feedback-correct {
+  background: linear-gradient(135deg, #d4edda, #c8e6c9);
+}
+
+.drag-feedback-wrong {
+  background: linear-gradient(135deg, #f8d7da, #ffcdd2);
+}
+
+.result-badge {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.answer-detail {
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.correct-answer-detail {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.text-correct {
+  color: #28a745;
+  font-size: 24px;
+}
+
+.text-wrong {
+  color: #dc3545;
+  font-size: 24px;
+}
+
+.point-earned {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #FFD700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.next-question-hint {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  animation: pulse 1s infinite;
+}
+
+/* ----------------------------------------
+   Result Screen
+   ---------------------------------------- */
+.result-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.95);
+  margin: 30px 20px;
+  padding: 30px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.result-emoji {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.result-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.final-score-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.final-score {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.max-score {
+  font-size: 20px;
+  color: #666;
+}
+
+.percentage-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.result-stats {
+  background: #f0f0f0;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.result-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-play-again {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-play-again:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px rgba(102,126,234,0.4);
+}
+
+.btn-back-home {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-back-home:hover {
+  background: #5a6268;
+  transform: scale(1.02);
+}
+
+/* ----------------------------------------
+   Quest Title
+   ---------------------------------------- */
+.quest-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quest-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quest-title h3 {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 8px;
+}
+
+.quest-title p {
+  color: rgba(255,255,255,0.9);
+}
+
+/* ----------------------------------------
+   Animations
+   ---------------------------------------- */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+}
+
+/* ----------------------------------------
+   Responsive Design
+   ---------------------------------------- */
+@media (max-width: 480px) {
+  /* Characters */
+  .character-img-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .character-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .character-card h3 {
+    font-size: 16px;
+  }
+  
+  /* Question */
+  .question-text {
+    font-size: 22px;
+  }
+  
+  .option-text {
+    font-size: 16px;
+  }
+  
+  .option-letter {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  /* Drag & Drop */
+  .drag-number-item {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .drag-instruction-banner p {
+    font-size: 10px;
+  }
+  
+  .drag-hand-icon {
+    font-size: 18px;
+  }
+  
+  .drag-question-text h3 {
+    font-size: 20px;
+  }
+  
+  .drag-soal-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .result-badge {
+    font-size: 24px;
+  }
+  
+  .answer-detail {
+    font-size: 16px;
+  }
+  
+  .text-correct, .text-wrong {
+    font-size: 20px;
+  }
+  
+  /* Level */
+  .level-info-text h3 {
+    font-size: 14px;
+  }
+  
+  .level-info-text p {
+    font-size: 10px;
+  }
+  
+  .level-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  /* Result */
+  .final-score {
+    font-size: 48px;
+  }
+  
+  .percentage-text {
+    font-size: 22px;
+  }
+  
+  .result-emoji {
+    font-size: 48px;
+  }
+}
+
+/* Landscape mode */
+@media (max-width: 800px) and (orientation: landscape) {
+  .character-status {
+    padding: 8px 20px;
+  }
+  
+  .status-char-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .drag-drop-container {
+    min-height: 300px;
+  }
+  
+  .drag-number-item {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .drag-drop-zone-custom {
+    padding: 15px;
+  }
+}
+
+/* Level Locked Styles */
+.level-locked {
+  opacity: 0.7;
+  cursor: not-allowed;
+  filter: grayscale(0.3);
+}
+
+
+.locked-badge {
+  display: inline-block;
+  background: #999;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.completed-badge {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.unlocked-badge {
+  display: inline-block;
+  background: #2196F3;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* Wrong answer disabled style */
+.option-btn.wrong-disabled {
+  background: #f8d7da;
+  border-color: #dc3545;
+  opacity: 0.7;
+}
+
+/* Tombol Reset Progres */
+.btn-reset-progress {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s;
+}
+
+.btn-reset-progress:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(244,67,54,0.3);
+}
+
+/* Tombol kembali ke level */
+.btn-back-levels {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-back-levels:hover {
+  transform: scale(1.02);
+}
+
+/* Custom Modal Styles */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.custom-modal {
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+  max-width: 320px;
+  width: 85%;
+  animation: zoomIn 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.custom-modal-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.custom-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.custom-modal-message {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.modal-btn-close {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-btn-close:hover {
+  transform: scale(1.05);
+}
+
+.custom-modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.modal-btn-cancel {
+  background: #e0e0e0;
+  color: #666;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-btn-confirm {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-btn-cancel:hover,
+.modal-btn-confirm:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Warna untuk jawaban yang dipilih user - BENAR */
+.option-btn.correct-selected {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+/* Warna untuk jawaban yang dipilih user - SALAH */
+.option-btn.wrong-selected {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+/* Hapus style lama yang menampilkan jawaban benar */
+.option-btn.correct {
+  /* DIHAPUS - tidak dipakai lagi */
+}
+
+/* Opsi lain yang tidak dipilih tetap normal */
+.option-btn:disabled {
+  opacity: 0.8;
+  background: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+/* Progress Bar Keren */
+.progress-bar-container {
+  position: relative;
+  z-index: 2;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.progress-bar-wrapper {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A, #4CAF50);
+  background-size: 200% 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+  position: relative;
+  animation: gradientShift 2s ease infinite;
+}
+
+.progress-bar-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5));
+  animation: shimmer 1.5s infinite;
+}
+
+.progress-bar-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.progress-current {
+  color: #FFD700;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress-sep {
+  color: white;
+  font-size: 16px;
+}
+
+.progress-total {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.progress-label {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+/* Level Badge */
+.level-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin-left: auto;
+}
+
+.level-badge-icon {
+  font-size: 16px;
+}
+
+.level-badge-text {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
