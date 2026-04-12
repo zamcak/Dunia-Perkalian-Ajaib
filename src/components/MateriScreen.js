@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import soundManager from './SoundManager';
 import { materiList } from '../data/materiData';
+import '../styles/MateriScreen.css';
 
 const MateriScreen = ({ onBack }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,7 +55,7 @@ const MateriScreen = ({ onBack }) => {
                 {materi.contoh.map((item, idx) => (
                   <div key={idx} className="contoh-item">
                     {item.gambar && <img src={item.gambar} alt="Contoh" className="contoh-gambar" />}
-                    <p>{item.text}</p>
+                    <p className="contoh-text"  dangerouslySetInnerHTML={{ __html: item.text }}></p>
                   </div>
                 ))}
               </div>
@@ -87,5 +88,7 @@ const MateriScreen = ({ onBack }) => {
     </div>
   );
 };
+
+
 
 export default MateriScreen;

@@ -27,17 +27,22 @@ const HomeScreen = ({ onNavigate }) => {
   // Menu items - pakai 1 gambar untuk semua button
   const menuItems = [
     {
+      id: 'cptp',
+      title: 'CP & TP',
+    },
+    {
       id: 'materi',
       title: 'MATERI',
+    },
+     {
+      id: 'video',
+      title: 'VIDEO',
     },
     {
       id: 'quiz',
       title: 'QUIZ',
     },
-    {
-      id: 'video',
-      title: 'VIDEO',
-    },
+   
     {
       id: 'rangkuman',
       title: 'RANGKUMAN',
@@ -45,11 +50,8 @@ const HomeScreen = ({ onNavigate }) => {
     {
       id: 'developer',
       title: 'PENGEMBANG',
-    },
-      {
-      id: 'cptp',
-      title: 'CP & TP',
     }
+      
   ];
 
   return (

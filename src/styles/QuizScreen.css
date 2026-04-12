@@ -240,7 +240,7 @@
 }
 
 .question-text {
-  font-size: 28px;
+  font-size: 18px;
   color: #333;
   margin-bottom: 15px;
 }
@@ -438,7 +438,7 @@
 }
 
 .drag-question-text h3 {
-  font-size: 28px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -752,11 +752,7 @@
     font-size: 16px;
   }
   
-  /* Question */
-  .question-text {
-    font-size: 22px;
-  }
-  
+ 
   .option-text {
     font-size: 16px;
   }

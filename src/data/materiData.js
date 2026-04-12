@@ -1,64 +1,18 @@
 export const materiList = [
   {
     id: 1,
-    judul: "Penjumlahan",
+    judul: "Apa itu Perkalian?",
     gambar: "",
-    gambarSoal: "/assets/images/materi/rumus-penjumlahan.png",
-    deskripsi: "Penjumlahan adalah operasi dasar matematika untuk menggabungkan dua bilangan atau lebih menjadi satu bilangan yang disebut jumlah.",
-    rumus: "a + b = c",
+    gambarSoal: "",
+    deskripsi: 'Perkalian adalah penjumlahan yang dilakukan berulang-ulang dengan bilangan yang sama. Perkalian dasar menggunakan simbol " × " pada penulisan kalimat matematika.',
+    rumus: '"2 dikali 3" atau "2 kali 3" ditulis secara matematika: 2 × 3',
     rumusGambar: "",
     contoh: [
-      { text: "2 + 3 = 5", gambar: "" },
-      { text: "7 + 4 = 11", gambar: "" },
-      { text: "15 + 6 = 21", gambar: "" }
+      { text: '<div class="math-card"><p class="title">Penjumlahan Berulang</p><div class="content"><p class="addition">3 + 3 + 3 = <span>9</span></p><div class="arrow">⬇️</div><p class="meaning">Artinya sama dengan:</p><p class="multiplication">3 × 3 = <span>9</span></p></div></div>', gambar: "" },
+      { text: "<div style=\"text-align:center; font-family:sans-serif;\"><p>Ada <b>3 kantong kelereng</b>. Setiap kantong berisi <b>10 kelereng</b>.</p><img src=\"assets/images/materi/maone.png\" alt=\"kantong kelereng\" style=\"margin:10px 0; border-radius:10px;\" /><p>Ada <b>3 kali penjumlahan bilangan 10</b>:</p><p>10 + 10 + 10 = <b>30</b></p><p>⬇️</p><p><b>3 × 10 = 30</b></p></div>", gambar: "" },
     ],
     
   },
-  {
-    id: 2,
-    judul: "Pengurangan ➖",
-    gambar: "",
-    gambarSoal: "",
-    deskripsi: "Pengurangan adalah operasi untuk mencari selisih antara dua bilangan. Hasil pengurangan disebut selisih.",
-    rumus: "a - b = c",
-    rumusGambar: "/assets/images/materi/rumus-pengurangan.png",
-    contoh: [
-      { text: "9 - 4 = 5", gambar: "" },
-      { text: "15 - 7 = 8", gambar: "" },
-      { text: "30 - 12 = 18", gambar: "" }
-    ],
-   
-  },
-  {
-    id: 3,
-    judul: "Perkalian ✖️",
-    gambar: "",
-    gambarSoal: "",
-    deskripsi: "Perkalian adalah penjumlahan berulang. Contoh: 3 × 4 = 3 + 3 + 3 + 3 = 12",
-    rumus: "a × b = c",
-    rumusGambar: "",
-    contoh: [
-      { text: "5 × 4 = 20", gambar: "" },
-      { text: "6 × 7 = 42", gambar: "" },
-      { text: "8 × 9 = 72", gambar: "" }
-    ],
-   
-  },
-  {
-    id: 4,
-    judul: "Pembagian ➗",
-    gambar: "",
-    gambarSoal: "",
-    deskripsi: "Pembagian adalah kebalikan dari perkalian. Membagi bilangan menjadi kelompok yang sama besar.",
-    rumus: "a ÷ b = c",
-    rumusGambar: "",
-    contoh: [
-      { text: "20 ÷ 4 = 5", gambar: "" },
-      { text: "36 ÷ 6 = 6", gambar: "" },
-      { text: "45 ÷ 9 = 5", gambar: "" }
-    ],
-   
-  }
 ];
 
 export const videoList = [

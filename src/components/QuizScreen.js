@@ -557,11 +557,17 @@ const QuizScreen = ({ onBack }) => {
           <div className="question-header">
             {currentQuestion?.petunjuk && (
               <div className="petunjuk-box">
-                <span className="petunjuk-icon">💡</span>
                 <span className="petunjuk-text">{currentQuestion.petunjuk}</span>
               </div>
             )}
-            <h3 className="question-text">{currentQuestion?.soal}</h3>
+            <h3 className="question-text">
+              {currentQuestion?.soal?.split('\n').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </h3>
             {currentQuestion?.gambar && (
               <img src={currentQuestion.gambar} alt="Soal" className="soal-gambar" />
             )}

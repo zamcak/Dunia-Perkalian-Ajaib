@@ -1,0 +1,47 @@
+.contoh-text {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+  .math-card {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .addition span,
+  .multiplication span {
+    font-weight: bold;
+    color: #ffe082;
+  }
+
+  .arrow {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .meaning {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+
+  
