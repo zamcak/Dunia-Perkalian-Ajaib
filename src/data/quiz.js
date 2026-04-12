@@ -14,7 +14,7 @@ export const levels = [
     world: 'Level 1',
     bg: '/assets/images/bg/bgame.png',
     color: '#4CAF50',
-    description: 'Level ini sangat mudah, belajar penjumlahan bilangan sederhana!',
+    description: 'Level ini sangat mudah, belajar  bilangan sederhana!',
     type: 'multiple-choice',
     questions: [
       { id: 1, soal: "2 + 2 + 2 = ?", gambar: null, jawaban: 6, pilihan: [2, 3, 6, 7], petunjuk: "2x3" },
