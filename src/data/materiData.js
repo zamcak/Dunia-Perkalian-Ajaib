@@ -18,28 +18,13 @@ export const materiList = [
 export const videoList = [
   {
     id: 1,
-    judul: "Pengenalan Matematika Dasar",
-    thumbnail: "/assets/images/materi/maxresc.jpg",
-    url: "https://www.youtube.com/embed/rs_bX7K_u5M",
-    durasi: "5:30",
-    deskripsi: "Video ini menjelaskan konsep dasar matematika"
+    judul: "Perkalian Dasar Kelas 2",
+    thumbnail: "https://i3.ytimg.com/vi/duPKiXeK0SQ/hqdefault.jpg",
+    url: "https://www.youtube.com/embed/duPKiXeK0SQ",
+    durasi: "5:59",
+    deskripsi: "Video ini menjelaskan konsep perkalian dasar dalam matematika"
   },
-  {
-    id: 2,
-    judul: "Tips Menghitung Cepat",
-    thumbnail: "/assets/images/materi/maxresb.jpg",
-    url: "https://www.youtube.com/embed/mrJt8Ux4GXA&pp",
-    durasi: "8:15",
-    deskripsi: "Pelajari trik menghitung cepat"
-  },
-  {
-    id: 3,
-    judul: "Latihan Soal Matematika",
-    thumbnail: "/assets/images/materi/maxresa.jpg",
-    url: "https://www.youtube.com/embed/cL2lvaRTD6Q",
-    durasi: "10:00",
-    deskripsi: "Latihan soal dan pembahasan"
-  }
+
 ];
 
 export const rangkumanData = {
