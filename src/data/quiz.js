@@ -19,7 +19,7 @@ export const levels = [
     questions: [
       { id: 1, soal: "2 + 2 + 2 = ?", gambar: null, jawaban: 6, pilihan: [2, 3, 6, 7], petunjuk: "2x3" },
       { id: 2, soal: "5 + 5 + 5 + 5 = ?", gambar: null, jawaban: 20, pilihan: [10, 20, 30, 40], petunjuk: "5x4" },
-      { id: 3, soal: "🧺🌸🌸🌸🌸 + 🧺🌸🌸🌸🌸 + 🧺🌸🌸🌸🌸 \n Jika ditulis dalam kalimat matematika adalah...", gambar: null, jawaban: "4 x 3 = 12", pilihan: ["4 x 3 = 12","4 x 5 = 20","2 x 7 = 14", "5 x 3 = 15"], petunjuk: "Ada 3 keranjang, setiap keranjang berisi 4 bunga 🌸" },
+      { id: 3, soal: "🧺🌸🌸🌸🌸 + 🧺🌸🌸🌸🌸 + 🧺🌸🌸🌸🌸 \n Jika ditulis dalam kalimat matematika adalah...", gambar: null, jawaban: "4 x 3 = 12", pilihan: ["4 x 3 = 12","3 x 4 = 14","3 x 4 = 14", "3 x 3 = 12"], petunjuk: "Ada 3 keranjang, setiap keranjang berisi 4 bunga 🌸" },
       { id: 4, soal: "Berapa jumlah bola seluruhnya?", gambar: null, jawaban: 18, pilihan: [15, 16, 17, 18], petunjuk: "Ada 9 kotak, setiap kotak berisi 2 bola ⚽" },
     ]
   },
@@ -35,7 +35,7 @@ export const levels = [
     questions: [
       { id: 1, soal: "3 x 4 = ?", gambar: null, jawaban: 12, pilihan: [7, 12, 14, 16], petunjuk: "3 kelompok 4" },
       { id: 2, soal: "6 x 2 = ?", gambar: null, jawaban: 12, pilihan: [10, 11, 12, 13], petunjuk: "6 kelompok 2" },
-      { id: 3, soal: "🍎🍎🍎 + 🍎🍎🍎 + 🍎🍎🍎 \n Bentuk perkaliannya adalah...", gambar: null, jawaban: "3 x 3 = 9", pilihan: ["3 x 3 = 9","3 x 2 = 6","2 x 3 = 6","4 x 3 = 12"], petunjuk: "Ada 3 kelompok, masing-masing 3 apel" },
+      { id: 3, soal: "🍎🍎🍎 + 🍎🍎🍎 + 🍎🍎🍎 \n Bentuk perkaliannya adalah...", gambar: null, jawaban: "3 x 3 = 9", pilihan: ["3 x 3 = 9","3 + 3 = 9","3 x 2 = 6","9 x 3 = 12"], petunjuk: "Ada 3 kelompok, masing-masing 3 apel" },
       { id: 4, soal: "4 x 5 = ?", gambar: null, jawaban: 20, pilihan: [10, 15, 20, 25], petunjuk: "4 kelompok 5" },
     ]
   },
@@ -52,7 +52,7 @@ export const levels = [
     questions: [
       { id: 1, soal: "7 x 3 = ?", gambar: null, jawaban: 21, pilihan: [18, 20, 21, 24], petunjuk: "7 kelompok 3" },
       { id: 2, soal: "Ada 5 kotak, tiap kotak berisi 6 pensil. Total pensil?", gambar: null, jawaban: 30, pilihan: [25, 30, 35, 40], petunjuk: "5 x 6" },
-      { id: 3, soal: "🍇🍇🍇🍇 + 🍇🍇🍇🍇 + 🍇🍇🍇🍇 \n Jadi perkaliannya adalah...", gambar: null, jawaban: "4 x 3 = 12", pilihan: ["4 x 3 = 12","3 x 4 = 12","4 x 4 = 16","3 x 3 = 9"], petunjuk: "Ada 3 kelompok, masing-masing 4 anggur" },
+      { id: 3, soal: "🍇🍇🍇🍇 + 🍇🍇🍇🍇 + 🍇🍇🍇🍇 \n Jadi perkaliannya adalah...", gambar: null, jawaban: "3 x 4 = 12", pilihan: ["4 x 3 = 12","3 x 4 = 12","4 x 4 = 16","3 x 3 = 9"], petunjuk: "Ada 3 kelompok, masing-masing 4 anggur" },
       { id: 4, soal: "9 x 2 = ?", gambar: null, jawaban: 18, pilihan: [16, 17, 18, 19], petunjuk: "9 kelompok 2" },
     ]
   },
@@ -69,7 +69,7 @@ export const levels = [
     questions: [
       { id: 1, soal: "8 x 4 = ?", gambar: null, jawaban: 32, pilihan: [28, 30, 32, 36], petunjuk: "8 kelompok 4" },
       { id: 2, soal: "Ada 3 kandang, tiap kandang berisi 7 ayam. Total ayam?", gambar: null, jawaban: 21, pilihan: [18, 20, 21, 24], petunjuk: "3 x 7" },
-      { id: 3, soal: "🍪🍪🍪🍪🍪 + 🍪🍪🍪🍪🍪 \n Bentuk perkaliannya adalah...", gambar: null, jawaban: "5 x 2 = 10", pilihan: ["5 x 2 = 10","4 x 5 = 20","5 x 3 = 15","2 x 4 = 8"], petunjuk: "Ada 2 kelompok, masing-masing 5 kue" },
+      { id: 3, soal: "🍪🍪🍪🍪🍪 + 🍪🍪🍪🍪🍪 \n Bentuk perkaliannya adalah...", gambar: null, jawaban: "2 x 5 = 10", pilihan: ["5 x 2 = 10","2 x 5 = 10","5 + 5 = 10","5 + 2 = 10"], petunjuk: "Ada 2 kelompok, masing-masing 5 kue" },
       { id: 4, soal: "10 x 3 = ?", gambar: null, jawaban: 30, pilihan: [20, 25, 30, 35], petunjuk: "10 kelompok 3" },
     ]
   }
